@@ -60,17 +60,17 @@ function weatherDetails(info) {
         const { temp, feels_like, humidity } = info.main;
 
         if (id == 800) {
-            wIcon.src = "http://localhost:port/assets/img/Weather%20Icons/clear.svg";
+            wIcon.src = "https://meteo-finoana.herokuapp.com//assets/img/Weather%20Icons/clear.svg";
         } else if (id >= 200 && id <= 232) {
-            wIcon.src = "http://localhost:port/assets/img/Weather%20Icons/storm.svg";
+            wIcon.src = "https://meteo-finoana.herokuapp.com//assets/img/Weather%20Icons/storm.svg";
         } else if (id >= 600 && id <= 622) {
-            wIcon.src = "http://localhost:port/assets/img/Weather%20Icons/snow.svg";
+            wIcon.src = "https://meteo-finoana.herokuapp.com//assets/img/Weather%20Icons/snow.svg";
         } else if (id >= 701 && id <= 781) {
-            wIcon.src = "http://localhost:port/assets/img/Weather%20Icons/haze.svg";
+            wIcon.src = "https://meteo-finoana.herokuapp.com//assets/img/Weather%20Icons/haze.svg";
         } else if (id >= 801 && id <= 804) {
-            wIcon.src = "http://localhost:port/assets/img/Weather%20Icons/cloud.svg";
+            wIcon.src = "https://meteo-finoana.herokuapp.com//assets/img/Weather%20Icons/cloud.svg";
         } else if ((id >= 500 && id <= 531) || (id >= 300 && id <= 321)) {
-            wIcon.src = "http://localhost:port/assets/img/Weather%20Icons/rain.svg";
+            wIcon.src = "https://meteo-finoana.herokuapp.com//assets/img/Weather%20Icons/rain.svg";
         }
 
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
